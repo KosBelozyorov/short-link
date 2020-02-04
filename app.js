@@ -23,4 +23,4 @@ if (process.env.NODE_ENV === 'production') {
 const PORT = process.env.PORT || 5000;
 
 // eslint-disable-next-line no-console
-app.listen(5000, () => console.log(`App has been started on port ${PORT}..`));
+app.listen(PORT, () => console.log(`App has been started on port ${PORT}..`));
