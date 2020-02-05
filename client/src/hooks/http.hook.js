@@ -9,7 +9,9 @@ export const useHttp = () => {
       setLoading(true);
       try {
         if (body) {
+          // eslint-disable-next-line no-param-reassign
           body = JSON.stringify(body);
+          // eslint-disable-next-line no-param-reassign
           headers['Content-Type'] = 'application/json';
         }
 
